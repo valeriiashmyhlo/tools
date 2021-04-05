@@ -69,9 +69,9 @@ async function cashRegister(q: Queue<string>, name: string) {
 async function main() {
     const q: Queue<string> = new AsyncQueue();
     return Promise.all([
-        cashRegister(q, 'Vlad'),
-        cashRegister(q, 'Lera'),
-        cashRegister(q, 'Dima'),
+        cashRegister(q, '1'),
+        cashRegister(q, '2'),
+        cashRegister(q, '3'),
         customerStream(q),
         customerStream(q),
     ]);
